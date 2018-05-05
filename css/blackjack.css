@@ -1,0 +1,203 @@
+body{font-family: 'Amatic SC', cursive;
+     text-shadow: 2.5px 0 0 black;
+     color:#004de6;
+     font-size:500%;
+}
+
+html,body{height: 100%;}
+/********************************************ROWS****************************************************/
+
+.container-fluid{
+	height:100%;
+	background: linear-gradient(to bottom, #33ccff 0%, #9999ff 100%);
+	/*background-color: #d1e0e0;#66d9ff;*/
+}
+
+.one,.three,.two{
+	height: 27%;
+}
+
+.four{
+	height: 15%;
+}
+
+.points-area,.cards-area,.colOne,.middle,.footer{
+	height: 100%;
+}
+.one{
+	margin-top: 2%;
+}
+/********************************************BUTTONS****************************************************/
+.fic{
+	display:none;
+	padding-top: 2.5%;
+	width: 12%;
+}
+.fic1{
+	margin-left: 10%;
+}
+.play_button{
+	margin-left: 20%;
+	margin-top: 7%;
+	display: none;
+}
+.hit,.stand{
+	
+	margin-top: 7%;
+	display: none;
+}
+
+.hit{margin-left: 25%;}
+
+
+
+
+
+/********************************************SHUFFLE****************************************************/
+.card{
+	margin-top: 5%;
+	border: 0.5px solid black;
+	position: absolute;
+	transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+}
+.mazzo1{
+left:45px;
+}
+.mazzo2{
+left:40px;
+}
+.mazzo3{
+left:35px;
+}
+.mazzo4{
+left:30px;
+}
+.mazzo5{
+left:25px;
+}
+.mazzo6{
+left:20px;
+}
+
+/********************************************FLIPPER****************************************************/
+.flipper{
+	transition: 0.6s;
+	transform-style: preserve-3d;
+    position: relative;
+    height: 100%; 
+    width: 100%;
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+}
+
+
+.front {
+	z-index: 1;
+}
+
+.back {
+	transform: rotateY(180deg); 
+}
+
+/********************************************DISPLAY*************************************************/
+
+#rigthDisplay{
+	display:none;
+	height: 90%;
+}
+
+.points{
+    padding-top: 50%;
+    padding-left: 30%;
+}
+
+.display{
+		text-align: center;
+		padding-top: 10%;
+}
+
+.moneyWon{
+	margin-left: 40%;
+}
+/********************************************LOGO****************************************************/
+
+div.cards-area{background:url('../img2/logo.png');
+         background-size: 25% 25%;
+         background-position: 50% 50%;    
+         background-repeat:no-repeat;
+
+}
+
+
+.oz,.footer{
+	background-color: transparent; /*#b3cbcb;#4db8ff;*/
+	
+}
+.oz{
+	height: 95%;
+	
+}
+
+
+
+/*******************************************BLACKIMAGE**************************************************/
+.blackImage{
+	margin-left: 30%;
+	margin-top: 4%;
+	display:none;
+}
+/*******************************************@MEDIA**************************************************/
+@media screen and (max-width:1099px){
+.play_button{
+	margin-left: 20%;
+	margin-top: 7%;
+	display: none;
+}
+.hit,.stand{
+	
+	margin-top: 7%;
+	display: none;
+}
+
+.hit{margin-left: 25%;}
+
+
+
+
+
+
+.points{
+	font-size: 2.8em;
+    padding-top: 50%;
+    padding-left: 30%;
+}
+
+.display{
+		text-align: center;
+		padding-top: 10%;
+}
+
+.moneyWon{
+	margin-left: 40%;
+	
+}
+
+.one,.three{
+	height: 30%;
+}
+
+.two,.four{
+	height: 20%;
+}
+
+
+
+
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+	
+<html lang="eng">
+<head>
+<meta charset= "UTF-8">
+<title>Blackjack</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/blackjack.css">
+<script type="text/javascript" src='js/jquery.min.js'></script>
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+
+<script src="external/jquery/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+
+</head>
+<body onload="createCards();shuffle_time();">
+<div class="container-fluid">
+
+<div class="row one">
+<div class="colOne col-xs-8">
+                     <div id="a" class="col-xs-2 cards-area"></div>
+                     <div class="col-xs-2 cards-area">
+                          <div id="flipper" class="flipper">
+		                  <div id="b" class="front"></div>
+		                  <div id="b2" class="back"></div>
+                          </div>
+                     </div>
+                     <div id="c" class="col-xs-2 cards-area"></div>
+                     <div id="d" class="col-xs-2 cards-area"></div>
+                     <div id="e" class="col-xs-2 cards-area"></div>
+                     <div class="col-xs-2 points-area">
+                     <p class="points" id="comPoints"></p>
+                     </div>
+</div> 
+<div class="col-xs-4">
+<img class="img-responsive blackImage" id="blackImage1" src="img2/bb.png" width="60%">
+</div>
+ </div>
+
+<div class="row two">
+ 	<div class="middle col-xs-6"><p class="display" id='middleDisplay'></p>
+	</div>
+ 	<div class="middle az col-xs-3">
+	<img id='mazzo1' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+	<img id='mazzo2' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+	<img id='mazzo3' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+	<img id='mazzo4' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+	<img id='mazzo5' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+	<img id='mazzo6' class="card mazzo" src="img2/back.png" width="35%" height="87%">
+ 		 	</div>
+	<div id='rigthDisplay' class="middle oz col-xs-3">
+	
+	<p class="playMon">Money : <span id="pMoney"></span></p>
+		<p class="playMon">Bet : <span id="pBet"></span></p>
+   <p class="playMon moneyWon"><span id="moneyWon"></span></p>
+	
+	
+	</div>	
+
+
+</div>
+<div class="row three">
+	<div class="colOne col-xs-8">
+                    <div id="f" class="cards-area col-xs-2"></div>
+                    <div id="g" class="cards-area col-xs-2"></div>
+                    <div id="h" class="cards-area col-xs-2"></div>
+                    <div id="i" class="cards-area col-xs-2"></div>
+                    <div id="l" class="cards-area col-xs-2"></div>
+                    <div class="col-xs-2 points-area">
+                     	<p class="points" id="playerPoints"></p>
+                     </div>
+</div> 
+<div class="col-xs-4">
+<img class="img-responsive blackImage" id="blackImage2" src="img2/bb.png" width="60%">
+</div>
+
+
+
+</div>
+<div class="row four">
+	
+<div class="footer col-xs-2">
+		<p class="hit" id="hit">Hit</p>
+	</div>
+
+<div class="footer col-xs-2">
+        <p class="stand" id="stand">Stand</p>
+    </div>
+
+		<div class="footer col-xs-5">
+
+    <img id='five' class="img-responsive fic fic1" onclick='fiches(5)' src="fichas/1.png" alt="fiches_5">
+    <img id='ten' class="img-responsive fic fic2" onclick='fiches(10)' src="fichas/2.png" alt="fiches_10">
+    <img id='twentyfive' class="img-responsive fic fic3" onclick='fiches(25)' src="fichas/3.png" alt="fiches_25">
+    <img id='fifty' class="img-responsive fic fic4" onclick='fiches(50)' src="fichas/4.png" alt="fiches_50">
+    <img id='undred' class="img-responsive fic fic5" onclick='fiches(100)' src="fichas/5.png" alt="fiches_100">
+	    </div>
+
+   	<div class="footer col-xs-3"><p id='play' class='play_button'>Play</p></div>
+
+
+</div>
+
+
+
+</div>
+<script type="text/javascript" src="blackjack.js"></script>
+
+
+</body>
+</html>
+
+
+
+
